@@ -1,8 +1,28 @@
-.corousel-container{
-  
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .corousel-container img{
-  height: 600px;
+  border-radius: 4vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+  .corousel-container img{
+    max-height: 20vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .corousel-container img{
+    max-height: 80vh;
+  }
+}
+
+/* products.jsx */
+
+.products-container{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Montserrat;
 }
