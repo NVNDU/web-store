@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ImageSlider from './ImageSlider';
 import Products from './Products';
 import NewArrivals from './NewArrivals';
+import Banner from './Banner';
+import Footer from './Footer';
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
       <ImageSlider/>
       <NewArrivals/>
       <Products/>
+      <Banner/>
+      <Footer/>
     </div>
   );
 }
