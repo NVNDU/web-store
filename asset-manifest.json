@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/web-store/static/css/main.6e3ad469.css",
-    "main.js": "/web-store/static/js/main.fdfee911.js",
+    "main.css": "/web-store/static/css/main.fe602192.css",
+    "main.js": "/web-store/static/js/main.9f3409aa.js",
     "static/js/453.7ac7ae3a.chunk.js": "/web-store/static/js/453.7ac7ae3a.chunk.js",
     "static/media/4.jpg": "/web-store/static/media/4.da9d8e3951ca0bd873e9.jpg",
     "static/media/5.jpg": "/web-store/static/media/5.d02e16502c8f6592c5d7.jpg",
     "static/media/3.jpg": "/web-store/static/media/3.34e19d089d09b3665a9f.jpg",
     "static/media/2.jpg": "/web-store/static/media/2.a2f093cfc43ffd37509b.jpg",
     "static/media/1.jpg": "/web-store/static/media/1.753c3f10ac3c2da769b0.jpg",
-    "static/media/product_4.jpg": "/web-store/static/media/product_4.5a894f1e41cf9e56d70d.jpg",
-    "static/media/product_2.jpg": "/web-store/static/media/product_2.32aade1de2e595982864.jpg",
-    "static/media/product_3.jpg": "/web-store/static/media/product_3.1e93d346cae84bdfb5f1.jpg",
-    "static/media/product_1.jpg": "/web-store/static/media/product_1.e90b80d4e3a14f759b1e.jpg",
+    "static/media/banner_01.png": "/web-store/static/media/banner_01.30f7f7600c0021f4cc24.png",
+    "static/media/product_1.jpg": "/web-store/static/media/product_1.f151f3ed288ac3a7c3b7.jpg",
+    "static/media/product_3.jpg": "/web-store/static/media/product_3.cb0e3d5419d4164a47f9.jpg",
+    "static/media/product_2.jpg": "/web-store/static/media/product_2.c72aae850bb904c69130.jpg",
+    "static/media/product_4.jpg": "/web-store/static/media/product_4.3727b97bd8d50f8caeed.jpg",
     "static/media/logo.svg": "/web-store/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/web-store/index.html",
-    "main.6e3ad469.css.map": "/web-store/static/css/main.6e3ad469.css.map",
-    "main.fdfee911.js.map": "/web-store/static/js/main.fdfee911.js.map",
+    "main.fe602192.css.map": "/web-store/static/css/main.fe602192.css.map",
+    "main.9f3409aa.js.map": "/web-store/static/js/main.9f3409aa.js.map",
     "453.7ac7ae3a.chunk.js.map": "/web-store/static/js/453.7ac7ae3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e3ad469.css",
-    "static/js/main.fdfee911.js"
+    "static/css/main.fe602192.css",
+    "static/js/main.9f3409aa.js"
   ]
 }
