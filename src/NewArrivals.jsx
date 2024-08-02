@@ -8,7 +8,7 @@ import Card from './Card'
 function NewArrivals() {
   return (
     <div className='newarrival-container'>
-        <h5>ONLY THE BEST</h5>
+        <h5>Only the best</h5>
         <h2>New Arrivals</h2>
         <div>
             <Card img={pic01} price={2700}/>

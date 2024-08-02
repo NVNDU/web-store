@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fjalla+One&family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fjalla+One&family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .App{
   /* align-content: center; */
 }
@@ -10,6 +12,10 @@
   /* padding-left: 2vh;
   padding-right: 2vh; */
   object-fit: cover;
+}
+
+.navbar-container{
+  font-family:Montserrat;
 }
 
 @media screen and (max-width: 768px) {
@@ -24,8 +30,6 @@
   }
 }
 
-
-
 .newarrival-container{
   align-content: center;
   text-align: center;
@@ -34,14 +38,15 @@
 .newarrival-container h5{
   color: rgb(98, 97, 99);
   padding-top: 30px;
-  font-family:sans-serif;
-  font-size: 15px;  
+  font-family:Montserrat;
+  font-size: 15px;
+  text-transform: capitalize;  
 }
 
 .newarrival-container h2{
   color: rgb(18, 18, 19);
   padding-bottom: 20px;
-  font-family:'Times New Roman', Times, serif;  
+  font-family:'Times New Roman', Times, serif; 
   font-size: 10vh;
 }
 
@@ -59,7 +64,7 @@
   /* box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1); */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
+/* ==============================Media QUERY================================== */
 @media screen and (max-width: 500px) {
   .card-container img{
     width: 150px;
@@ -75,7 +80,7 @@
     font-size: 10px;  
   }
 }
-
+/* ==============================Media QUERY================================== */
 .card-container img:hover{
   transform: scale(1.1);
   animation-timing-function: linear;
@@ -97,7 +102,7 @@
 
 .products-container ul{
   list-style: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
 }
 
@@ -116,7 +121,7 @@ So apply the display: inline-block; to the (correct) li elements
   display: inline-block;
   padding: 0px 10px 15px 10px;
   font-size: 20px;
-  font-family: sentic;
+  font-family: Montserrat;
 }
 
 .products-container ul li:hover{
@@ -174,13 +179,17 @@ So apply the display: inline-block; to the (correct) li elements
 }
 
 @media screen and (max-width: 500px) {
+    .products-container h2{
+    font-size: 5vh;
+  }
+
   .banner-container img{
     width:50vh;
     height: 20vh;
   }
 }
 
-/* @media screen and (min-width: 500px) {
+ /*@media screen and (min-width: 500px) {
   .banner-container img{
     width:50vh;
     height: 20vh;
@@ -213,9 +222,19 @@ So apply the display: inline-block; to the (correct) li elements
 }
 
 .footer-container h4{
-  font-family:Do Hyeon;
+  font-family:Montserrat;
   text-transform: uppercase;
   margin-top: 20px;
   font-size: 2vh;
 }
 
+@media screen and (max-width: 500px) {
+  .footer-container h2{
+  font-size: 5vh;
+  }
+
+  .footer-container h4{
+    font-size: 1.5vh;
+  }
+
+}
