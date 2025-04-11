@@ -1,0 +1,31 @@
+
+
+
+
+[
+    {
+        "id":1,
+        "caption":"item-1",
+        "icon":"logo192.png"
+    },
+    {
+        "id":2,
+        "caption":"item-2",
+        "icon":"prod-images/img-2.jpg"
+    },
+    {
+        "id":3,
+        "caption":"item-3",
+        "icon":"prod-images/img-3.jpg"
+    },
+    {
+        "id":4,
+        "caption":"item-4",
+        "icon":"prod-images/img-4.jpg"
+    },
+    {
+        "id":5,
+        "caption":"item-5",
+        "icon":"prod-images/img-5.jpg"
+    }
+]

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 function Products() {
@@ -6,14 +7,9 @@ function Products() {
     <div className='products-container'>
         <h2>Products</h2>
         <ul>
-          <li>Bras</li>
-          <li>Panties</li>
-          <li>Lingerie </li>
-          <li>Sleep</li>
-          <li>sports</li>
-          <li>Sport & Lounge</li>
-          <li>swim</li>
-          <li>sale</li>
+          <li><Link to="/tops">Tops</Link></li>
+          <li><Link to="/bottoms">Bottoms</Link></li>
+          <li><Link to="/sale">Sale</Link></li>
         </ul>
     </div>
   )

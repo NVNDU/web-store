@@ -2,20 +2,24 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fjalla+One&family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fjalla+One&family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fjalla+One&family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .App{
   /* align-content: center; */
 }
-.corousel-container img{
-  /* border-radius: 4vh; */
-  /* border-radius: 30px; */
-  /* padding-left: 2vh;
-  padding-right: 2vh; */
-  object-fit: cover;
+
+.corousel-container{
+  position: relative;
 }
 
+.navbar{
+  position: absolute;
+}
 .navbar-container{
   font-family:Montserrat;
+}
+
+.corousel-container img{
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -30,12 +34,12 @@
   }
 }
 
-.newarrival-container{
+.product-template{
   align-content: center;
   text-align: center;
 }
 
-.newarrival-container h5{
+.product-template h5{
   color: rgb(98, 97, 99);
   padding-top: 30px;
   font-family:Montserrat;
@@ -43,7 +47,7 @@
   text-transform: capitalize;  
 }
 
-.newarrival-container h2{
+.product-template h2{
   color: rgb(18, 18, 19);
   padding-bottom: 20px;
   font-family:'Times New Roman', Times, serif; 
@@ -72,11 +76,11 @@
     margin: 0px 10px 0px 10px;
   }
 
-  .newarrival-container h2{
+  .product-template h2{
     font-size: 5vh;
   }
 
-  .newarrival-container h5{
+  .product-template h5{
     font-size: 10px;  
   }
 }
@@ -124,7 +128,12 @@ So apply the display: inline-block; to the (correct) li elements
   font-family: Montserrat;
 }
 
-.products-container ul li:hover{
+.products-container ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.products-container ul li a:hover{
   color: palevioletred;
 }
 
@@ -199,18 +208,30 @@ So apply the display: inline-block; to the (correct) li elements
 .footer-container{
   text-align: center;
   padding-top:20px;
-  background-color: rgb(246, 213, 235);
+  background-image: url(Assets/Contacts/bg.jpg);
+  background-size:cover;
+  /* background-color: rgb(246, 213, 235); */
   border-top-left-radius:30px;
   border-top-right-radius:30px;
   /* box-shadow: 10px 5px 5px hsla(0, 0%, 0%, 0.1); */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: 20px;
   color: rgb(20, 21, 21);
+  height:100%;
 }
 
 .footer-container h2{
   font-family: 'Times New Roman', Times, serif;
   font-size: 6vh;
+}
+
+.footer-container  a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer-container  a:hover{
+  color: rgb(9, 236, 36);
 }
 
 .footer-container .social-icons i{
@@ -238,3 +259,4 @@ So apply the display: inline-block; to the (correct) li elements
   }
 
 }
+
