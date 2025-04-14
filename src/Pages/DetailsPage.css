@@ -1,0 +1,31 @@
+.main-column{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family:Montserrat;
+}
+.preview-column{
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.preview-column img{
+    /* border: 2px solip black; */
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    /* margin: 0px 30px 0px 30px; */
+}
+
+.detail-column{
+    width: 50%;
+    /* border: 2px solid black; */
+}
+
+.detail-column p{
+    font-size: 2rem;
+}

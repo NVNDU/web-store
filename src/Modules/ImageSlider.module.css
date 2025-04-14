@@ -1,0 +1,19 @@
+.corousel-container{
+position: relative;
+}
+
+.corousel-container img{
+object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+.corousel-container img{
+    max-height: 20vh;
+}
+}
+
+@media screen and (min-width: 992px) {
+.corousel-container img{
+    max-height: 80vh;
+}
+}

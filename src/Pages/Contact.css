@@ -1,0 +1,108 @@
+
+.outer{
+    background-image: url(Assets/Contacts/bg.jpg);
+    background-size: cover;
+}
+.inner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family:Montserrat;
+}
+
+.contact-column{
+    width: 50%;
+    background-color:  rgba(100, 100, 111, 0.2);
+    height: 50vh;
+    /* border: 2px solid; */
+    margin: 0px 0px 0px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+table, tr, td {
+    /* border:1px solid black; */
+}
+
+.heading01{
+    position: relative;
+    padding:30px 20px 10px 40px;
+}
+
+.table-container{
+   /* height: 100%; */
+   display: flex;
+   align-items: center;
+   padding: 0px 20px 0px 20px;
+   font-size: 20px;
+   font-family: Roboto;
+   /* font-weight: bold; */
+   /* border: 2px solid; */
+}
+
+.contacts-table td{
+    padding-left: 20px;
+    padding-bottom: px;
+}
+.contacts-table .td-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.contacts-table .td-links a:hover{
+    color: rgb(145, 145, 148);
+}
+
+@media screen and (max-width: 768px) {
+    .inner{
+        flex-direction: column;
+    }
+
+    .contact-column{
+        width: 100%;
+    }
+
+    .heading01{
+        position: fixed;
+    }
+
+    .contacts-table{
+        position: fixed;
+    }
+
+    .faq-column{
+        width: 100%;
+    }
+  }
+
+
+.faq-column{
+    width: 50%;
+    background-color:  rgb(238, 143, 174);
+    height: 50vh;
+    /* border: 2px solid; */
+    margin: 0px 20px 0px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading02{
+    position: relative;
+    padding:30px 20px 5px 40px;
+    color:white ;
+}
+
+.faq-container {
+   align-items: center;
+   padding: 0px 20px 0px 20px;
+   /* border: 2px solid; */
+}
+
+.faq-container .accordion-item{
+   
+}
+
+.faq-container .accordion{
+    
+}
