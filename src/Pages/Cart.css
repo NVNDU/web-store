@@ -20,4 +20,26 @@
     font-weight: bold;
 }
 }
-  
+
+.cart-page{
+   display: flex;
+   flex-direction: column;
+}
+
+.btn-option{
+    border-radius: 0px;
+}
+
+.cart-page h3{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 10px;
+}
+
+.cart-page h1{
+    padding: 50px 0 5px; 
+}
+
+.cart-page p{
+    padding-bottom: 40px;
+}

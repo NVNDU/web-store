@@ -1,36 +1,88 @@
-import React from 'react'
-import '../DetailsPage.css'
+import React, { useState } from 'react'
+import './DetailsPage.css'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom'
 import { useCart } from 'react-use-cart'
+import Alert from 'react-bootstrap/Alert';
+import { Button, ButtonGroup, ToggleButton } from 'react-bootstrap';
+import NavBar from '../Modules/NavBar'
 
-function DetailsPage(props) {
+function DetailsPage() {
   const location = useLocation();
-  const {price, name, image, id} = location.state || {};
-  const { addItem } = useCart();
+  const {price, name, image, id, description, details} = location.state || {};
+  const { addItem,updateItemQuantity } = useCart();
+
+  const [checked, setChecked] = useState(false);
+  const [radioValue, setRadioValue] = useState('1');
+  const [quantity, setQuantity] = useState(1);
+
+  const radios = [
+    { name: 'S', value: '1' },
+    { name: 'M', value: '2' },
+    { name: 'L', value: '3' },
+    { name: 'XL', value: '4' },
+  ];
 
  return (
-    <div className='main-column'>
-      <div className="preview-column">
+  <>
+    <NavBar/>
+    <div className='main-column container col-lg-12'>
+      <div class="col-lg-6 preview-column">
         <img src={image} alt='loading...'/>
       </div>
-      <div className="detail-column">
+      <div class="col-lg-6 detail-column">
         <h1>{name}</h1>
-        <p>LKR {price}</p>
-        <p>id  {id}</p>
-        <p>Size:</p>
-        <select name="size" id="size">
-          <option value="small">S</option>
-          <option value="small">L</option>
-          <option value="small">XL</option>
-          <option value="small">XXL</option>
-        </select>
-        <input type="number" id="qty" defaultValue={1}/>
-        <Link to='/cart'>
-        <button>add to cart</button> 
-        </Link>
+        <p id='price'>LKR {price}</p>
+        <p id='desc'>{description}</p>
+        <ul id='list'>
+        {details?.map((detail, index) => (
+          <li key={index}>{detail}</li>
+        ))}
+        </ul>
+        <p id='p-size'>Size:</p>
+       
+        <ButtonGroup id='btn-size'>
+        {radios.map((radio, idx) => (
+          <ToggleButton
+            className='toggle-btn'
+            key={idx}
+            id={`radio-${idx}`}
+            type="radio"
+            variant= 'outline-dark'
+            name="radio"
+            value={radio.value}
+            checked={radioValue === radio.value}
+            onChange={(e) => setRadioValue(e.currentTarget.value)}
+          >
+            {radio.name}
+          </ToggleButton>
+        ))}
+      </ButtonGroup>
+      <p id='p-qty'>Qty:</p>
+      <input type="number" 
+      id="qty" 
+      value={quantity}
+      onChange={(e) => setQuantity(Number(e.target.value))}/>
+      <Button variant="dark" id='btn-cart' onClick={()=>
+        {
+          const selectedSize = radios.find(r => r.value === radioValue)?.name;
+
+          const productWithSize = {
+            ...location.state,
+            id: `${location.state.id}-${selectedSize}`, // makes each size unique
+            size: selectedSize,
+            qty: quantity
+          };
+          addItem(productWithSize);
+        }
+      }>
+            <i class="bi bi-bag-heart"/>
+            &nbsp;Add to Cart
+      </Button>
       </div>
     </div>
+  </>
+    
   )
 }
 

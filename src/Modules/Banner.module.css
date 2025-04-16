@@ -1,13 +1,14 @@
+
 .banner-container{
     text-align: center;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    display: flex;
   }
   
   .banner-container img {
     width: 100%;
     position: relative;
+    background-image:  rgba(44, 44, 46, 0.377);
   }
   
   .banner-container h2{

@@ -1,6 +1,6 @@
 
 .outer{
-    background-image: url(Assets/Contacts/bg.jpg);
+    background-image: url(../Assets/Contacts/bg.jpg);
     background-size: cover;
 }
 .inner{

@@ -18,6 +18,20 @@ transform: scale(1.1);
 animation-timing-function: linear;
 }
 
+.price-tag h4{
+    margin: 20px 0px 5px;
+    text-decoration: none;
+  }
+  
+  .price-tag p{
+    font-size: 20px;
+    margin: 0px 0px 5px;
+  }
+  
+  .price-tag button{
+    /* border-radius: 0px; */
+  }
+
 
 /* ==============================Media QUERY================================== */
 @media screen and (max-width: 500px) {

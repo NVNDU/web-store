@@ -1,14 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img01 from './Assets/slider/1.jpg';
-import img02 from './Assets/slider/2.jpg';
-import img03 from './Assets/slider/3.jpg';
-import img04 from './Assets/slider/4.jpg';
-import img05 from './Assets/slider/5.jpg';
+import img01 from '../Assets/slider/1.jpg';
+import img02 from '../Assets/slider/2.jpg';
+import img03 from '../Assets/slider/3.jpg';
+import img04 from '../Assets/slider/4.jpg';
+import img05 from '../Assets/slider/5.jpg';
 import './ImageSlider.module.css'
 
 function IndividualIntervalsExample() {
   return (
-    <Carousel className='corousel-container'>
+    <Carousel className='corousel-container block'>
       <Carousel.Item interval={4000}>
         <img src={img01} text="First slide" className='d-block w-100'/>
         <Carousel.Caption>

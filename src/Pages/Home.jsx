@@ -1,10 +1,11 @@
 import React from 'react'
-import ImageSlider from '../Resources/ImageSlider';
-import Products from '../Resources/Products';
-import NewArrivals from '../Resources/NewArrivals';
-import Banner from '../Resources/Banner';
-import Footer from '../Resources/Footer';
-import NavBar from '../Resources/NavBar';
+import ImageSlider from '../Modules/ImageSlider';
+import Products from '../Modules/Products';
+import NewArrivals from '../Modules/NewArrivals';
+import Banner from '../Modules/Banner';
+import Footer from '../Modules/Footer';
+import NavBar from '../Modules/NavBar';
+import About from './About';
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       <NewArrivals/>
       <Products/>
       <Banner/>
-      
+      {/* <About/> */}
       <Footer/>
     </>
   )
